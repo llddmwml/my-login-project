@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登陆表单界面</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <form class="login-form" novalidate>
+      <h2>用户登录</h2>
+
+      <label for="email">邮箱</label>
+      <input type="email" id="email" name="email" placeholder="请输入邮箱" required>
+      <small class="error-msg" id="email-error"></small>
+
+      <label for="password">密码</label>
+      <input type="password" id="password" name="password" placeholder="请输入密码（至少六位）" minlength="6" required>
+      <small class="error-msg" id="password-error"></small>
+
+      <button type="submit" class="btn">登录</button>
+
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
